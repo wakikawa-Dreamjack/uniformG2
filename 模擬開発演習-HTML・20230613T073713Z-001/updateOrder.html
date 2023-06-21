@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/button.css">
+  <title>Document</title>
+</head>
+
+
+<body>
+<!--ヘッダーをインクルードしてください-->
+   <!--ヘッダーは共有化します-->
+   <header>
+    <div class="inner">
+      <p class="logo"><a href="homePage.html">ユニフォーム受注管理システム</a></p>
+      <ul class="navi">
+        <!--ゲストなら受注商品一覧、商品一覧、ログアウトは隠す-->
+        <!--管理者なら購入履歴は隠す-->
+        <!--ゲスト,ログイン済みユーザーなら受注商品一覧、商品一覧は隠す(if文で実装できます)-->
+        <li><a href="PurchaseHistory.html">購入履歴</a></li>
+        <li><a href="uniformList.html">商品一覧</a></li>
+        <li><a href="orderList.html">受注商品一覧</a></li>
+        <li><a href="/logout">ログアウト</a></li>
+      </ul>
+    </div>
+ 
+</header>
+<div class="user-line">
+  <span class="user"></span>
+    <!--ユーザーのセッション情報がなければログインと新規登録を表示する(if文を使用)-->
+  <a href="login.html">ログイン</a>
+  <a href="insertUser.html">新規登録</a>
+    <!--ユーザーのセッション情報があればユーザー名,ユーザー情報変更を表示する(if文を使用)-->
+    <div>ユーザー名</div>
+    <a href="updateUser.html">ユーザー情報変更</a>
+  </div>
+
+  <div class="insert-form">
+    <h2>受注商品変更</h2>
+
+    <form action="#" method="post">
+        <!--labelの中に変更前情報が入ります-->
+      <dl class="form-group">
+        <dt>
+          <label for="order-id">商品名</label>
+          <dd>
+            変更する商品の名前
+          </dd>
+        </dt>
+      </dl>
+
+      <dl class="form-group">
+        <dt>
+          <label for="customer-name">入金状況</label>
+        </dt>
+        <dd>
+            <select id="uniform-type" name="" required>
+                <option value="未入金">未入金</option>
+                <option value="入金済み">入金済み</option>
+            </select>
+        </dd>
+      </dl>
+
+      <dl class="form-group">
+        <dt>
+          <label for="customer-name">発送状況</label>
+        </dt>
+        <dd>
+            <select id="uniform-type" name="" required>
+                <option value="未発送">未発送</option>
+                <option value="入金済み">発送済み</option>
+            </select>
+        </dd>
+      </dl>
+      <button type="submit" class="buttonorenge">変更完了</button>
+    </form>
+  </div>
+
+  
+<!--フッターーをインクルードしてください-->
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/button.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!--ヘッダーをインクルードしてください-->
+  <!--ヘッダーは共有化します-->
+  <header>
+    <div class="inner">
+      <p class="logo"><a href="homePage.html">ユニフォーム受注管理システム</a></p>
+      <ul class="navi">
+        <!--ゲストなら受注商品一覧、商品一覧、ログアウトは隠す-->
+        <!--管理者なら購入履歴は隠す-->
+        <!--ゲスト,ログイン済みユーザーなら受注商品一覧、商品一覧は隠す(if文で実装できます)-->
+        <li><a href="PurchaseHistory.html">購入履歴</a></li>
+        <li><a href="uniformList.html">商品一覧</a></li>
+        <li><a href="orderList.html">受注商品一覧</a></li>
+        <li><a href="/logout">ログアウト</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="user-line">
+    <span class="user"></span>
+    <!--ユーザーのセッション情報がなければログインと新規登録を表示する(if文を使用)-->
+    <a href="login.html">ログイン</a>
+    <a href="insertUser.html">新規登録</a>
+    <!--ユーザーのセッション情報があればユーザー名,ユーザー情報変更を表示する(if文を使用)-->
+    <div>ユーザー名</div>
+    <a href="updateUser.html">ユーザー情報変更</a>
+  </div>
+
+  <div class="insert-form">
+    <h2>商品登録</h2>
+
+    <form action="#" method="post">
+
+      <dl class="form-group">
+        <dt>
+          <label for="image">画像</label>
+          <dd>
+            <input type="file" id="image" name="" required>
+          </dd>
+        </dt>
+      </dl>
+
+      <dl class="form-group">
+        <dt>
+          <label for="product-name">商品名</label>
+        </dt>
+        <dd>
+          <span>例:ユニフォームF</span>
+          <input type="text" id="product-name" name="" required>
+        </dd>
+      </dl>
+
+      <dl class="form-group">
+        <dt>
+          <label for="stock">在庫数</label>
+        </dt>
+        <dd>
+          <span>50</span>
+          <input type="text" id="stock" name="" required>
+        </dd>
+      </dl>
+
+      <dl class="form-group">
+        <dt>
+          <label for="price">金額</label>
+        </dt>
+        <dd>
+          <span>1000</span>
+          <input type="text" id="price" name="" required>
+        </dd>
+      </dl>
+
+      <dl class="form-group">
+        <dt>
+          <label for="description">商品説明</label>
+        </dt>
+        <dd>
+          <span>例:肌触りが良いです</span>
+          <textarea id="description" name="" rows="4"></textarea>
+        </dd>
+      </dl>
+      <input type="submit" value="登録" class="button-blue">
+    </form>
+  </div>
+
+  <!--フッターーをインクルードしてください-->
+</body>
+
+</html>

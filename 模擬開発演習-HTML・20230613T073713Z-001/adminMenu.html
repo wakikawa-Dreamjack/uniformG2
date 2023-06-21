@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+   <!--ヘッダーは共有化します-->
+   <header>
+    <div class="inner">
+      <p class="logo"><a href="homePage.html">ユニフォーム受注管理システム</a></p>
+      <ul class="navi">
+        <!--ゲストなら受注商品一覧、商品一覧、ログアウトは隠す-->
+        <!--管理者なら購入履歴は隠す-->
+        <!--ゲスト,ログイン済みユーザーなら受注商品一覧、商品一覧は隠す(if文で実装できます)-->
+        <li><a href="PurchaseHistory.html">購入履歴</a></li>
+        <li><a href="uniformList.html">商品一覧</a></li>
+        <li><a href="orderList.html">受注商品一覧</a></li>
+        <li><a href="/logout">ログアウト</a></li>
+      </ul>
+    </div>
+ 
+</header>
+<div class="user-line">
+  <span class="user"></span>
+    <!--ユーザーのセッション情報がなければログインと新規登録を表示する(if文を使用)-->
+  <a href="login.html">ログイン</a>
+  <a href="insertUser.html">新規登録</a>
+    <!--ユーザーのセッション情報があればユーザー名,ユーザー情報変更を表示する(if文を使用)-->
+    <div>ユーザー名</div>
+    <a href="updateUser.html">ユーザー情報変更</a>
+  </div>
+
+      <section id="home">
+        <div class="inner">
+                <p>システム名</p>
+                <p>管理者メニュー</p>
+        </div>
+      </section>
+
+      <section class="line">
+        <div class="inner"><p>機能一覧</p></div>
+      </section>
+
+      <section id="sec">
+        <div class="menu-list">
+            <ul>
+                <!--余裕があればデザインもやります-->
+                <li><a href="orderList.html">受注商品一覧</a></li>
+                <li><a href="uniformList.html">商品一覧</a></li>
+                <li><a href="updateAdmin.html">パスワード変更</a></li>
+        </div>
+      </section>
+      <div class="footer-cont"></div>
+    <footer>
+        <div class="inner">
+            <p>footerfooterfooterfooterfooterfooterfooter</p>
+        </div>
+    </footer>
+</body>
+</html>

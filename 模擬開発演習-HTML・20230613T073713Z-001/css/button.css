@@ -1,0 +1,111 @@
+/*青ボタン*/
+.button-blue {
+    position: relative;
+    border: 1px solid rgb(100, 170, 255);
+    color: #005ed2;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin: 1%;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+    background: #ffffff;
+    transition: background 0.3s ease-in-out;
+}
+
+.button-blue:hover {
+    background: #5ba1f6;
+    color: #ffffff;
+}
+/*赤ボタン*/
+.button-red {
+    position: relative;
+    border: 1px solid #ff7575;
+    color: #ee0000;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin: 1%;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+    background: #ffffff;
+    transition: background 0.3s ease-in-out;
+}
+
+.button-red:hover {
+    background: #fe2929;
+    color: #ffffff;
+}
+/*オレンジボタン*/
+.button-orenge {
+    position: relative;
+    border: 1px solid #ff9100;
+    color: #ff8400;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin: 1%;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+    background: #ffffff;
+    transition: background 0.3s ease-in-out;
+}
+
+.button-orenge:hover {
+    background: #ff8c00;
+    color: #ffffff;
+}
+/*青ボタン塗りつぶしver*/
+.buttonblue {
+    position: relative;
+    border: 1px solid rgb(100, 170, 255);
+    color: #ffffff;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin: 1%;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+    background: #005ed2;
+    transition: background 0.3s ease-in-out;
+}
+
+.buttonblue:hover {
+    background: #2487ff;
+}
+/*赤ボタン塗りつぶしver*/
+.buttonred {
+    position: relative;
+    border: 1px solid #ff7575;
+    color: #ffffff;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin: 1%;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+    background: #ee0000;
+    transition: background 0.3s ease-in-out;
+}
+
+.buttonred:hover {
+    background: hsl(0, 94%, 69%);
+}
+/*オレンジボタン*/
+.buttonorenge {
+    position: relative;
+    border: 1px solid #ff9100;
+    color: #ffffff;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin: 1%;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+    background: #ff8400;
+    transition: background 0.3s ease-in-out;
+}
+
+.button-orenge:hover {
+    background: #ffaf4e;
+}
